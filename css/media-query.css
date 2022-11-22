@@ -36,10 +36,10 @@
         width: 100%;
     }
     .username, .userpassword{
-        width: 90%;
+        width: 60%;
     }
     button{
-        width: 90%;
+        width: 60%;
         transition: .3s;
     }
     #entrar:hover{
