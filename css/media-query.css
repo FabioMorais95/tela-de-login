@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: linear-gradient(to bottom, #66CC99, #112233);
+        background-image: linear-gradient(to bottom, #112233, #F0F1F5);
     }
     section{
         display: flex;
@@ -14,10 +14,11 @@
         border-radius: 0px;
         border-bottom-left-radius: 10px;
         border-top-left-radius:10px;
-        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.425);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
     }
-    section > img{
+    section > .imagem{
         height: 100%;
+        width: 50%;
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0px;
     }
@@ -39,5 +40,36 @@
     }
     button{
         width: 90%;
+        transition: .3s;
+    }
+    #entrar:hover{
+        background-color:var(--background-color);
+        color: var(--primary-color);
+        transition: .3s;
+    }
+}
+@media(min-width:900px){
+    main{
+        background-image: linear-gradient(to bottom, #112233, #F0F1F5);
+    }
+    section{
+        width: 90%;
+        border-radius: 10px;
+    }
+    form{
+        width: 80%;
+    }
+    section > .imagem {
+        width: 40%;
+        display: flex;
+        order: 1;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .login{
+        width: 100%;
+        /* order: 1; */
     }
 }
