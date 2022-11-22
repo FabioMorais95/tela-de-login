@@ -1,4 +1,4 @@
-@media screen and (min-width:768px) and (orientation:landscape){
+@media(min-width:820px){
     main{
         display: flex;
         flex-direction: column;
