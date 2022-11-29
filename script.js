@@ -1,7 +1,8 @@
 const btn = document.querySelector('#entrar').addEventListener('click', checkLogin)
 const iconUser = document.querySelector('.username')
 const iconPassword = document.querySelector('.userpassword')
-
+const emailFocus = document.querySelector('.email')
+emailFocus.focus()
 function checkLogin() {
     const email = document.querySelector('.email').value
     const password = document.querySelector('.password').value
